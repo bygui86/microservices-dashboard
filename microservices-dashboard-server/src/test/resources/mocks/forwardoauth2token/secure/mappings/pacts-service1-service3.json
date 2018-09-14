@@ -1,0 +1,19 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/pacts/provider/service3/consumer/service1/latest",
+    "headers": {
+      "Authorization": {
+        "contains": "Bearer testvalue"
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "fixedDelayMilliseconds": 2000,
+    "bodyFileName": "pacts-service1-service3.json",
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

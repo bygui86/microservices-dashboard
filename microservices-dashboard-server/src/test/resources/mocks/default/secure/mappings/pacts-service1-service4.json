@@ -1,0 +1,14 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/pacts/provider/service4/consumer/service1/latest"
+  },
+  "response": {
+    "status": 200,
+    "fixedDelayMilliseconds": 2000,
+    "bodyFileName": "pacts-service1-service4.json",
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "applications": {
+    "versions__delta": "1",
+    "apps__hashcode": "UP_3_",
+    "application": [
+      {
+        "name": "SERVICE1",
+        "instance": [
+          {
+            "instanceId": "localhost:service1:7069",
+            "hostName": "localhost",
+            "app": "SERVICE1",
+            "ipAddr": "127.0.0.1",
+            "status": "UP",
+            "overriddenstatus": "UNKNOWN",
+            "port": {
+              "$": 7069,
+              "@enabled": "true"
+            },
+            "securePort": {
+              "$": 443,
+              "@enabled": "false"
+            },
+            "countryId": 1,
+            "dataCenterInfo": {
+              "@class": "com.netflix.appinfo.InstanceInfo$DefaultDataCenterInfo",
+              "name": "MyOwn"
+            },
+            "leaseInfo": {
+              "renewalIntervalInSecs": 30,
+              "durationInSecs": 90,
+              "registrationTimestamp": 1466173255014,
+              "lastRenewalTimestamp": 1466414104546,
+              "evictionTimestamp": 0,
+              "serviceUpTimestamp": 1466173255014
+            },
+            "metadata": {
+              "@class": "java.util.Collections$EmptyMap"
+            },
+            "appGroupName": "SERVICE1",
+            "homePageUrl": "https://localhost:7079/service1",
+            "statusPageUrl": "https://localhost:7079/service1/info",
+            "healthCheckUrl": "https://localhost:7079/service1/health",
+            "vipAddress": "service1",
+            "isCoordinatingDiscoveryServer": "false",
+            "lastUpdatedTimestamp": "1466173255014",
+            "lastDirtyTimestamp": "1466173254946",
+            "actionType": "ADDED"
+          }
+        ]
+      }
+    ]
+  }
+}

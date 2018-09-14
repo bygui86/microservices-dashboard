@@ -1,0 +1,104 @@
+{
+  "pacts": [
+    {
+      "updatedAt": "2015-01-19T22:15:10+00:00",
+      "createdAt": "2015-01-19T22:13:57+00:00",
+      "_embedded": {
+        "consumer": {
+          "name": "service1",
+          "_embedded": {
+            "version": {
+              "number": "1.0.1",
+              "_links": {
+                "self": {
+                  "href": "https://localhost:8089/pacticipants/service1/versions/1.0.1"
+                }
+              }
+            }
+          },
+          "_links": {
+            "self": {
+              "href": "https://localhost:8089/pacticipants/service1"
+            }
+          }
+        },
+        "provider": {
+          "name": "service4",
+          "_links": {
+            "self": {
+              "href": "https://localhost:8089/pacticipants/service4"
+            }
+          }
+        }
+      },
+      "_links": {
+        "self": [
+          {
+            "href": "https://localhost:8089/pacts/provider/service4/consumer/service1/latest"
+          },
+          {
+            "href": "https://localhost:8089/pacts/provider/service4/consumer/service1/version/1.0.1"
+          }
+        ]
+      }
+    },
+    {
+      "createdAt": "2016-01-20T13:42:00+00:00",
+      "_embedded": {
+        "consumer": {
+          "name": "service1",
+          "_embedded": {
+            "version": {
+              "number": "1.0.0",
+              "_links": {
+                "self": {
+                  "href": "https://localhost:8089/pacticipants/service1/versions/1.0.0"
+                }
+              }
+            }
+          },
+          "_links": {
+            "self": {
+              "href": "https://localhost:8089/pacticipants/service1"
+            }
+          }
+        },
+        "provider": {
+          "name": "service3",
+          "_links": {
+            "self": {
+              "href": "https://localhost:8089/pacticipants/service3"
+            }
+          }
+        }
+      },
+      "_links": {
+        "self": [
+          {
+            "href": "https://localhost:8089/pacts/provider/service3/consumer/service1/latest"
+          },
+          {
+            "href": "https://localhost:8089/pacts/provider/service3/consumer/service1/version/1.0.0"
+          }
+        ]
+      }
+    }
+  ],
+  "_links": {
+    "self": {
+      "href": "https://localhost:8089/pacts/latest"
+    },
+    "pacts": [
+      {
+        "href": "https://localhost:8089/pacts/provider/service4/consumer/service1/latest",
+        "name": "Latest pact between service1 and service4",
+        "title": "Pact"
+      },
+      {
+        "href": "https://localhost:8089/pacts/provider/service3/consumer/service1/latest",
+        "name": "Latest pact between service1 and service3",
+        "title": "Pact"
+      }
+    ]
+  }
+}

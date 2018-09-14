@@ -1,0 +1,19 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/service1/health",
+    "headers": {
+      "Authorization": {
+        "contains": "Basic dXNlcjpwYXNzd29yZA=="
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "fixedDelayMilliseconds": 2000,
+    "bodyFileName": "service1.json",
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

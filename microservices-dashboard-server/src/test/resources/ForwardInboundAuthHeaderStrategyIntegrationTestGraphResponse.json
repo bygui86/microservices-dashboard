@@ -1,0 +1,54 @@
+{
+  "directed" : true,
+  "types" : [ "DB", "MICROSERVICE", "REST", "SOAP", "JMS", "RESOURCE" ],
+  "nodes" : [ {
+    "details" : {
+      "type" : "MICROSERVICE",
+      "status" : "UP"
+    },
+    "id" : "service1",
+    "lane" : 2
+  }, {
+    "details" : {
+      "type" : "SOAP",
+      "version" : "1.0.0",
+      "status" : "UP",
+      "group" : "ADDR"
+    },
+    "id" : "backend1",
+    "lane" : 3
+  }, {
+    "details" : {
+      "methods" : "GET",
+      "type" : "RESOURCE",
+      "url" : "/endpoint1/",
+      "status" : "UP"
+    },
+    "id" : "/endpoint1/",
+    "lane" : 1
+  }, {
+    "details" : {
+      "docs" : "https://localhost:7069/service1/generated-docs/api-guide.html#resources-svc1rsc1",
+      "type" : "RESOURCE",
+      "url" : "http://host0015.local:8301/svc1rsc1",
+      "status" : "UP"
+    },
+    "id" : "svc1:svc1rsc1",
+    "lane" : 1
+  } ],
+  "lanes" : [ {
+    "type" : "UI Components",
+    "lane" : 0
+  }, {
+    "type" : "Resources",
+    "lane" : 1
+  }, {
+    "type" : "Microservices",
+    "lane" : 2
+  }, {
+    "type" : "Backends",
+    "lane" : 3
+  } ],
+  "multigraph" : false,
+  "graph" : [ ]
+}

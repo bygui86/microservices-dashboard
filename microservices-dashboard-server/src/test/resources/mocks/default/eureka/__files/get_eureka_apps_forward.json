@@ -1,0 +1,192 @@
+{
+  "applications": {
+    "versions__delta": "1",
+    "apps__hashcode": "UP_3_",
+    "application": [
+      {
+        "name": "SERVICE1",
+        "instance": [
+          {
+            "instanceId": "localhost:service1:7069",
+            "hostName": "localhost",
+            "app": "SERVICE1",
+            "ipAddr": "127.0.0.1",
+            "status": "UP",
+            "overriddenstatus": "UNKNOWN",
+            "port": {
+              "$": 7069,
+              "@enabled": "true"
+            },
+            "securePort": {
+              "$": 443,
+              "@enabled": "false"
+            },
+            "countryId": 1,
+            "dataCenterInfo": {
+              "@class": "com.netflix.appinfo.InstanceInfo$DefaultDataCenterInfo",
+              "name": "MyOwn"
+            },
+            "leaseInfo": {
+              "renewalIntervalInSecs": 30,
+              "durationInSecs": 90,
+              "registrationTimestamp": 1466173255014,
+              "lastRenewalTimestamp": 1466414104546,
+              "evictionTimestamp": 0,
+              "serviceUpTimestamp": 1466173255014
+            },
+            "metadata": {
+              "@class": "java.util.Collections$EmptyMap"
+            },
+            "appGroupName": "SERVICE1",
+            "homePageUrl": "https://localhost:7069/service1",
+            "statusPageUrl": "https://localhost:7069/service1/info",
+            "healthCheckUrl": "https://localhost:7069/service1/health",
+            "vipAddress": "service1",
+            "isCoordinatingDiscoveryServer": "false",
+            "lastUpdatedTimestamp": "1466173255014",
+            "lastDirtyTimestamp": "1466173254946",
+            "actionType": "ADDED"
+          }
+        ]
+      },
+      {
+        "name": "SERVICE2",
+        "instance": [
+          {
+            "instanceId": "localhost:service2:7069",
+            "hostName": "localhost",
+            "app": "SERVICE2",
+            "ipAddr": "10.120.92.223",
+            "status": "UP",
+            "overriddenstatus": "UNKNOWN",
+            "port": {
+              "$": 7069,
+              "@enabled": "true"
+            },
+            "securePort": {
+              "$": 443,
+              "@enabled": "false"
+            },
+            "countryId": 1,
+            "dataCenterInfo": {
+              "@class": "com.netflix.appinfo.InstanceInfo$DefaultDataCenterInfo",
+              "name": "MyOwn"
+            },
+            "leaseInfo": {
+              "renewalIntervalInSecs": 30,
+              "durationInSecs": 90,
+              "registrationTimestamp": 1465800498764,
+              "lastRenewalTimestamp": 1466414101649,
+              "evictionTimestamp": 0,
+              "serviceUpTimestamp": 1465800498765
+            },
+            "metadata": {
+              "@class": "java.util.Collections$EmptyMap"
+            },
+            "appGroupName": "SERVICE2",
+            "homePageUrl": "https://localhost:7069/service2",
+            "statusPageUrl": "https://localhost:7069/service2/info",
+            "healthCheckUrl": "https://localhost:7069/service2/health",
+            "vipAddress": "service2",
+            "isCoordinatingDiscoveryServer": "false",
+            "lastUpdatedTimestamp": "1465800498765",
+            "lastDirtyTimestamp": "1465800498650",
+            "actionType": "ADDED"
+          }
+        ]
+      },
+      {
+        "name": "SERVICE3",
+        "instance": [
+          {
+            "instanceId": "localhost:service3:7069",
+            "hostName": "localhost",
+            "app": "SERVICE3",
+            "ipAddr": "10.120.95.28",
+            "status": "UP",
+            "overriddenstatus": "UNKNOWN",
+            "port": {
+              "$": 7069,
+              "@enabled": "true"
+            },
+            "securePort": {
+              "$": 443,
+              "@enabled": "false"
+            },
+            "countryId": 1,
+            "dataCenterInfo": {
+              "@class": "com.netflix.appinfo.InstanceInfo$DefaultDataCenterInfo",
+              "name": "MyOwn"
+            },
+            "leaseInfo": {
+              "renewalIntervalInSecs": 30,
+              "durationInSecs": 90,
+              "registrationTimestamp": 1465911829652,
+              "lastRenewalTimestamp": 1466414098715,
+              "evictionTimestamp": 0,
+              "serviceUpTimestamp": 1464876718421
+            },
+            "metadata": {
+              "@class": "java.util.Collections$EmptyMap"
+            },
+            "homePageUrl": "https://localhost:7069/service3",
+            "statusPageUrl": "https://localhost:7069/service3/info",
+            "healthCheckUrl": "https://localhost:7069/service3/health",
+            "vipAddress": "service3",
+            "secureVipAddress": "service3",
+            "isCoordinatingDiscoveryServer": "false",
+            "lastUpdatedTimestamp": "1465911829653",
+            "lastDirtyTimestamp": "1465911829620",
+            "actionType": "ADDED"
+          }
+        ]
+      },
+      {
+        "name": "SERVICE4",
+        "instance": [
+          {
+            "instanceId": "localhost:service4:7069",
+            "hostName": "localhost",
+            "app": "SERVICE4",
+            "ipAddr": "10.120.95.28",
+            "status": "UP",
+            "overriddenstatus": "UNKNOWN",
+            "port": {
+              "$": 7069,
+              "@enabled": "true"
+            },
+            "securePort": {
+              "$": 443,
+              "@enabled": "false"
+            },
+            "countryId": 1,
+            "dataCenterInfo": {
+              "@class": "com.netflix.appinfo.InstanceInfo$DefaultDataCenterInfo",
+              "name": "MyOwn"
+            },
+            "leaseInfo": {
+              "renewalIntervalInSecs": 30,
+              "durationInSecs": 90,
+              "registrationTimestamp": 1465911829652,
+              "lastRenewalTimestamp": 1466414098715,
+              "evictionTimestamp": 0,
+              "serviceUpTimestamp": 1464876718421
+            },
+            "metadata": {
+              "@class": "java.util.Collections$EmptyMap"
+            },
+            "homePageUrl": "https://localhost:7069/service4",
+            "statusPageUrl": "https://localhost:7069/service4/info",
+            "healthCheckUrl": "https://localhost:7069/service4/health",
+            "vipAddress": "service4",
+            "secureVipAddress": "service4",
+            "isCoordinatingDiscoveryServer": "false",
+            "lastUpdatedTimestamp": "1465911829653",
+            "lastDirtyTimestamp": "1465911829620",
+            "actionType": "ADDED"
+          }
+        ]
+      }
+    ]
+  }
+}

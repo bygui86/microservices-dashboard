@@ -1,0 +1,50 @@
+server:
+  port: 0
+  servletPath: /*
+  contextPath:
+
+spring:
+  jackson:
+    mapper:
+      DEFAULT_VIEW_INCLUSION: true
+    serialization:
+      indent_output: true
+  boot:
+    admin.url: http://localhost:8085
+  redis:
+    host: localhost
+    pool:
+      max-wait: 10000
+
+redis.mock: true
+
+msdashboard:
+  index:
+    enabled: true
+  health:
+    filteredServices:
+      - hystrix
+      - diskSpace
+      - discovery
+      - configServer
+
+# Microservices platform integration
+admin:
+  url: http://localhost:8085
+
+eureka:
+  client:
+    enabled: true
+    register-with-eureka: false
+
+pact-broker:
+  latest-url: /pacts/latest
+  self-href-jsonPath: $.pacts[*]._links.self[0].href
+security:
+  user:
+    name: user
+    password: password
+
+
+
+# logging.level.org.springframework.boot.autoconfigure: TRACE

@@ -1,0 +1,23 @@
+{
+  "_links": {
+    "svc1:svc1rsc1": {
+      "href": "http://host0015.local:8301/svc1rsc1",
+      "templated": true
+    },
+    "svc1:svc1rsc2": {
+      "href": "http://host0015.local:8301/svc1rsc2",
+      "templated": true
+    },
+    "svc1:svc1rsc3": {
+      "href": "http://host0015.local:8301/svc1rsc3",
+      "templated": true
+    },
+    "curies": [
+      {
+        "href": "/generated-docs/api-guide.html#resources-{rel}",
+        "name": "svc1",
+        "templated": true
+      }
+    ]
+  }
+}

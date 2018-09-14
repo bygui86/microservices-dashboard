@@ -55,7 +55,16 @@
 		<spring-cloud.version>Finchley.RELEASE</spring-cloud.version>
 
 		<!-- microservices dashboard -->
+		<!--
+			ERROR: ClassNotFoundException
+				org.springframework.boot.bind.RelaxedPropertyResolver
+				|- de.codecentric.boot.admin.config.SpringBootAdminClientEnabledCondition
+					|- de.codecentric.boot.admin.config.SpringBootAdminClientAutoConfiguration
+		 -->
 		<microservices-dashboard.version>1.0.1</microservices-dashboard.version>
+		<!--<microservices-dashboard.version>1.1.0-SNAPSHOT</microservices-dashboard.version>-->
+		<microservices-dashboard-server.version>1.0.2</microservices-dashboard-server.version> <!-- locally modified -->
+		<microservices-dashboard-ui.version>1.0.1</microservices-dashboard-ui.version>
 
 		<!-- logging -->
 		<slf4.version>1.7.25</slf4.version>
@@ -63,6 +72,17 @@
 		<!-- others -->
 		<lombok.version>1.18.0</lombok.version>
 	</properties>
+
+	<!--<repositories>-->
+	<!--<repository>-->
+	<!--<id>oss-snapshots</id>-->
+	<!--<name>JFrog OSS Snapshots</name>-->
+	<!--<url>https://oss.jfrog.org/simple/oss-snapshot-local/</url>-->
+	<!--<snapshots>-->
+	<!--<enabled>true</enabled>-->
+	<!--</snapshots>-->
+	<!--</repository>-->
+	<!--</repositories>-->
 
 	<dependencyManagement>
 		<dependencies>
@@ -124,11 +144,27 @@
 			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
 		</dependency>
 
-		<!-- microservices dashboard -->
+		<!-- microservices-dashboard -->
+		<!--<dependency>-->
+		<!--<groupId>be.ordina</groupId>-->
+		<!--<artifactId>microservices-dashboard-server</artifactId>-->
+		<!--<version>${microservices-dashboard.version}</version>-->
+		<!--</dependency>-->
 		<dependency>
 			<groupId>be.ordina</groupId>
 			<artifactId>microservices-dashboard-server</artifactId>
-			<version>${microservices-dashboard.version}</version>
+			<version>${microservices-dashboard-server.version}</version>
+			<exclusions>
+				<exclusion>
+					<groupId>be.ordina</groupId>
+					<artifactId>microservices-dashboard-ui</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>be.ordina</groupId>
+			<artifactId>microservices-dashboard-ui</artifactId>
+			<version>${microservices-dashboard-ui.version}</version>
 		</dependency>
 
 		<!-- logging -->

@@ -1,0 +1,14 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/service2/health"
+  },
+  "response": {
+    "status": 500,
+    "fixedDelayMilliseconds": 2000,
+    "bodyFileName": "service2.json",
+    "headers": {
+      "Content-Type": "application/vnd.error+json;charset=UTF-8"
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "status": "DOWN",
+  "backend1": {
+    "status": "UP",
+    "version": "1.0.0",
+    "type": "SOAP",
+    "group": "ADDR"
+  },
+  "backend3": {
+    "status": "DOWN",
+    "error": "be.ordina.BackendNotAvailableException: TIMEOUT"
+  },
+  "backend4": {
+    "status": "UNKNOWN",
+    "type": "SOAP",
+    "group": "TEST"
+  },
+  "discoveryComposite": {
+    "description": "Spring Cloud Eureka Discovery Client",
+    "status": "UP",
+    "discoveryClient": {
+      "description": "Spring Cloud Eureka Discovery Client",
+      "status": "UP",
+      "services": [
+        "service1",
+        "service2",
+        "service3",
+        "service4"
+      ]
+    },
+    "eureka": {
+      "description": "Remote status from Eureka server",
+      "status": "UP",
+      "applications": {
+        "SERVICE1": 1,
+        "SERVICE2": 1,
+        "SERVICE3": 1,
+        "SERVICE4": 1
+      }
+    }
+  },
+  "diskSpace": {
+    "status": "UP",
+    "total": 2046640128,
+    "free": 1592250368,
+    "threshold": 10485760
+  },
+  "configServer": {
+    "status": "UP",
+    "propertySources": [
+      "overrides"
+    ]
+  },
+  "hystrix": {
+    "status": "UP"
+  }
+}

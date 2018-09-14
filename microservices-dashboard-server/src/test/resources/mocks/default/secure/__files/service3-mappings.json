@@ -1,0 +1,10 @@
+{
+  "{[/endpoint3/],methods=[GET],produces=[application/json]}" : {
+    "bean" : "requestMappingHandlerMapping",
+    "method" : "public java.lang.String be.ordina.controllers.TestController(java.lang.String,be.ordina.model.Order)"
+  },
+  "{[/endpoint4],methods=[GET],produces=[application/json]}" : {
+    "bean" : "requestMappingHandlerMapping",
+    "method" : "public java.util.List<be.ordina.model.Something> be.ordina.controllers.TestController.retrieveSomething(java.lang.String)"
+  }
+}

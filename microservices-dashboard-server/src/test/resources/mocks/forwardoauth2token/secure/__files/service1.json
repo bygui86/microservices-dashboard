@@ -1,0 +1,9 @@
+{
+  "status": "UP",
+  "backend1": {
+    "status": "UP",
+    "version": "1.0.0",
+    "type": "SOAP",
+    "group": "ADDR"
+  }
+}

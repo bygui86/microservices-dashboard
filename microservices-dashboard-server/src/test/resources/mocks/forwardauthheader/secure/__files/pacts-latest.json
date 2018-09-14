@@ -1,0 +1,57 @@
+{
+  "pacts": [
+    {
+      "createdAt": "2016-01-20T13:42:00+00:00",
+      "_embedded": {
+        "consumer": {
+          "name": "service1",
+          "_embedded": {
+            "version": {
+              "number": "1.0.0",
+              "_links": {
+                "self": {
+                  "href": "https://localhost:7069/pacticipants/service1/versions/1.0.0"
+                }
+              }
+            }
+          },
+          "_links": {
+            "self": {
+              "href": "https://localhost:7069/pacticipants/service1"
+            }
+          }
+        },
+        "provider": {
+          "name": "service3",
+          "_links": {
+            "self": {
+              "href": "https://localhost:7069/pacticipants/service3"
+            }
+          }
+        }
+      },
+      "_links": {
+        "self": [
+          {
+            "href": "https://localhost:7069/pacts/provider/service3/consumer/service1/latest"
+          },
+          {
+            "href": "https://localhost:7069/pacts/provider/service3/consumer/service1/version/1.0.0"
+          }
+        ]
+      }
+    }
+  ],
+  "_links": {
+    "self": {
+      "href": "https://localhost:7069/pacts/latest"
+    },
+    "pacts": [
+      {
+        "href": "https://localhost:7069/pacts/provider/service3/consumer/service1/latest",
+        "name": "Latest pact between service1 and service3",
+        "title": "Pact"
+      }
+    ]
+  }
+}

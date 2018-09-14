@@ -1,0 +1,132 @@
+{
+  "metadata": {
+    "pactSpecificationVersion": "2.0.0"
+  },
+  "consumer": {
+    "name": "service1"
+  },
+  "provider": {
+    "name": "service4"
+  },
+  "interactions": [
+    {
+      "provider_state": "pets exist",
+      "description": "a request for pets",
+      "request": {
+        "method": "get",
+        "path": "rel://svc4:svc4rsc1",
+        "query": "",
+        "headers": {
+          "accept": "application/vnd.ord.pets.v1+json;charset=UTF-8",
+          "x-application-state": "{\"userId\": 12345}"
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": {
+          "pets": [
+            {
+              "name": "Lasie",
+              "species": "dog",
+              "age": 5,
+              "price": 560
+            },
+            {
+              "name": "Garfield",
+              "species": "cat",
+              "age": 2,
+              "price": 58
+            },
+            {
+              "name": "Nemo",
+              "species": "fish",
+              "age": 0,
+              "price": 10
+            },
+            {
+              "name": "Billie",
+              "species": "hamster",
+              "age": 1,
+              "price": 15
+            }
+          ]
+        },
+        "headers": {}
+      }
+    },
+    {
+      "provider_state": "pet domains don't exist",
+      "description": "a request for pet domains",
+      "request": {
+        "method": "get",
+        "path": "/rel://svc4:svc4rsc1",
+        "query": "",
+        "headers": {
+          "accept": "application/vnd.ord.pets.v1+json;charset=UTF-8",
+          "x-application-state": "{\"userId\": 12345}"
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": {
+          "pets": []
+        },
+        "headers": {}
+      }
+    }
+  ],
+  "pactFileName": "c:\\Users\\me\\Documents\\workspace\\pet-store\\gulp/../tmp/pact/pacts-service1-service4.json",
+  "updatedAt": "2016-04-05T12:33:44+00:00",
+  "createdAt": "2016-03-21T18:09:31+00:00",
+  "_links": {
+    "self": {
+      "title": "Pact",
+      "name": "Pact between service1 (v1.0.0) and service4",
+      "href": "https://localhost:8089/pacts/provider/service4/consumer/service1/version/1.0.0"
+    },
+    "pb:consumer": {
+      "title": "Consumer",
+      "name": "service1",
+      "href": "https://localhost:8089/pacticipants/service1"
+    },
+    "pb:provider": {
+      "title": "Provider",
+      "name": "service4",
+      "href": "https://localhost:8089/pacticipants/service4"
+    },
+    "pb:latest-pact-version": {
+      "title": "Pact",
+      "name": "Latest version of this pact",
+      "href": "https://localhost:8089/pacts/provider/service4/consumer/service1/latest"
+    },
+    "pb:previous-distinct": {
+      "title": "Pact",
+      "name": "Previous distinct version of this pact",
+      "href": "https://localhost:8089/pacts/provider/service4/consumer/service1/version/1.0.0/previous-distinct"
+    },
+    "pb:diff-previous-distinct": {
+      "title": "Diff",
+      "name": "Diff with previous distinct version of this pact",
+      "href": "https://localhost:8089/pacts/provider/service4/consumer/service1/version/1.0.0/diff/previous-distinct"
+    },
+    "pb:pact-webhooks": {
+      "title": "Webhooks for the pact between service1 and service4",
+      "href": "https://localhost:8089/webhooks/provider/service4/consumer/service1"
+    },
+    "pb:tag-prod-version": {
+      "title": "Tag this version as 'production'",
+      "href": "https://localhost:8089/pacticipants/service1/versions/1.0.0/tags/prod"
+    },
+    "pb:tag-version": {
+      "title": "Tag version",
+      "href": "https://localhost:8089/pacticipants/service1/versions/1.0.0/tags/{tag}"
+    },
+    "curies": [
+      {
+        "name": "pb",
+        "href": "https://localhost:8089/doc/{rel}",
+        "templated": true
+      }
+    ]
+  }
+}

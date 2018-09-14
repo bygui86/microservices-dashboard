@@ -1,0 +1,14 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/eureka/apps/"
+  },
+  "response": {
+    "status": 200,
+    "fixedDelayMilliseconds": 2000,
+    "bodyFileName": "get_eureka_apps.json",
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

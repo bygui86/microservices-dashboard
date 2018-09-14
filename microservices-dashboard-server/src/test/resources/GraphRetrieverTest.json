@@ -1,0 +1,114 @@
+{
+  "directed": true,
+  "types": [
+    "DB",
+    "MICROSERVICE",
+    "REST",
+    "SOAP",
+    "JMS",
+    "RESOURCE"
+  ],
+  "nodes": [
+    {
+      "details": {
+
+      },
+      "id": "service2",
+      "lane": 3
+    },
+    {
+      "details": {
+        "test": "test"
+      },
+      "id": "service1",
+      "lane": 3
+    },
+    {
+      "details": {
+
+      },
+      "id": "backend2",
+      "lane": 3
+    },
+    {
+      "details": {
+
+      },
+      "id": "backend1",
+      "lane": 3
+    },
+    {
+      "details": {
+
+      },
+      "id": "svc2rsc1",
+      "lane": 3
+    },
+    {
+      "details": {
+
+      },
+      "id": "svc1rsc1",
+      "lane": 3
+    },
+    {
+      "details": {
+
+      },
+      "id": "svc1rsc2",
+      "lane": 3
+    }
+  ],
+  "lanes": [
+    {
+      "type": "UI Components",
+      "lane": 0
+    },
+    {
+      "type": "Resources",
+      "lane": 1
+    },
+    {
+      "type": "Microservices",
+      "lane": 2
+    },
+    {
+      "type": "Backends",
+      "lane": 3
+    }
+  ],
+  "links": [
+    {
+      "source": 0,
+      "target": 2
+    },
+    {
+      "source": 5,
+      "target": 1
+    },
+    {
+      "source": 1,
+      "target": 4
+    },
+    {
+      "source": 1,
+      "target": 3
+    },
+    {
+      "source": 6,
+      "target": 1
+    },
+    {
+      "source": 0,
+      "target": 6
+    },
+    {
+      "source": 4,
+      "target": 0
+    }
+  ],
+  "multigraph": false,
+  "graph": [
+
+  ]
+}
