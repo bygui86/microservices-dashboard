@@ -1,0 +1,93 @@
+{
+	"info": {
+		"_postman_id": "6c30b3f8-e111-44b9-8a65-33763c286d91",
+		"name": "MICROS-DASH__TEST",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get producer-service-local properties",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8081/producer-service/local",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"producer-service",
+						"local"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get consumer-service-local properties",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8081/consumer-service/local",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"consumer-service",
+						"local"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get eureka-server-local properties",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8081/eureka-server/local",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"eureka-server",
+						"local"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get dashboard-server-local properties",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8081/dashboard-server/local",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"dashboard-server",
+						"local"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
